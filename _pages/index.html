@@ -2,14 +2,14 @@
 layout: default
 ---
 
-{% comment %}{% include excludes/index/0-hero.html %}{% endcomment %}
-{% comment %}{% include excludes/index/1-services.html %}{% endcomment %}
-{% comment %}{% include excludes/index/2-welcome.html %}{% endcomment %}
-{% comment %}{% include excludes/index/3-case-studies.html %}{% endcomment %}
-{% comment %}{% include excludes/index/4-attorneys.html %}{% endcomment %}
-{% comment %}{% include excludes/index/5-contact.html %}{% endcomment %}
-{% comment %}{% include excludes/index/6-testimonials.html %}{% endcomment %}
-{% comment %}{% include excludes/index/7-blog.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/0-hero.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/1-services.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/2-welcome.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/3-case-studies.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/4-attorneys.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/5-contact.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/6-testimonials.html %}{% endcomment %}
+{% comment %}{% include miniaturas/excludes/index/7-blog.html %}{% endcomment %}
 
 <!-- Hero -->
 <div class="hero-wrap js-fullheight"
@@ -28,7 +28,7 @@ layout: default
 </div>
 
 <!-- Sobre mi -->
-<section class="ftco-section <!--ftco-no-pb-->">
+<section id="sobre-mi" class="ftco-section <!--ftco-no-pb-->">
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-6 pl-md-5">
@@ -45,9 +45,6 @@ layout: default
               ea commodo consequat.
             </p>
             </p>
-          </div>
-          <div class="col-md-12 mt-4">
-            <a href="/sobre-mi" class="btn btn-primary px-5">Ver Más</a>
           </div>
         </div>
       </div>
@@ -84,10 +81,10 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <div class="carousel-case owl-carousel ftco-owl">
-          {% include proyecto.html %}
-          {% include proyecto.html %}
-          {% include proyecto.html %}
-          {% include proyecto.html %}
+          {% include miniaturas/proyecto.html %}
+          {% include miniaturas/proyecto.html %}
+          {% include miniaturas/proyecto.html %}
+          {% include miniaturas/proyecto.html %}
         </div>
       </div>
       <div class="col-md-12 text-center mt-4">
@@ -109,10 +106,10 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <div class="carousel-case owl-carousel ftco-owl">
-          {% include ciudad.html %}
-          {% include ciudad.html %}
-          {% include ciudad.html %}
-          {% include ciudad.html %}
+          {% include miniaturas/ciudad.html %}
+          {% include miniaturas/ciudad.html %}
+          {% include miniaturas/ciudad.html %}
+          {% include miniaturas/ciudad.html %}
         </div>
       </div>
       <div class="col-md-12 text-center mt-4">
@@ -133,11 +130,11 @@ layout: default
       </div>
     </div>
     <div class="row d-flex">
-      {% include protagonista.html %}
-      {% include protagonista.html %}
-      {% include protagonista.html %}
+      {% include miniaturas/protagonista.html %}
+      {% include miniaturas/protagonista.html %}
+      {% include miniaturas/protagonista.html %}
     </div>
-    <div class="col-md-12 text-center mt-4">
+    <div id="contacto" class="col-md-12 text-center mt-4">
       <a href="/los-protagonistas" class="btn btn-primary px-5">Leer más</a>
     </div>
   </div>
@@ -207,9 +204,9 @@ layout: default
       </div>
     </div>
     <div class="row d-flex">
-      {% include noticia.html %}
-      {% include noticia.html %}
-      {% include noticia.html %}
+      {% include miniaturas/noticia.html %}
+      {% include miniaturas/noticia.html %}
+      {% include miniaturas/noticia.html %}
     </div>
     <div class="col-md-12 text-center mt-4">
       <a href="/noticias" class="btn btn-primary px-5">Ver Todas Las Noticias</a>

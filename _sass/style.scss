@@ -2254,3 +2254,22 @@ textarea.form-control {
     }
   }
 }
+
+
+.hero-page {
+  width: 100%;
+  height: 350px;
+  background-color: $primary;
+  display: flex;
+  align-items: flex-end;
+  h1 {
+    font-size: 48px;
+    color: $white;
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: $font-primary;
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+    }
+  }
+}

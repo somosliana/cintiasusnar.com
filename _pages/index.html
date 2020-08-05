@@ -13,7 +13,7 @@ layout: default
 
 <!-- Hero -->
 <div class="hero-wrap js-fullheight"
-  style="background-image: url('/assets/images/WhatsApp\ Image\ 2020-08-03\ at\ 11.59.36\ AM.jpeg');"
+  style="background-image: url('/assets/images/cintia-susñar-hero.jpg');"
   data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
@@ -28,7 +28,7 @@ layout: default
 </div>
 
 <!-- Sobre mi -->
-<section class="ftco-section ftco-no-pb">
+<section class="ftco-section <!--ftco-no-pb-->">
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-6 pl-md-5">
@@ -61,7 +61,19 @@ layout: default
   </div>
 </section>
 
-<section class="ftco-section">
+<!-- Banner COVID/Genero -->
+<section class="ftco-section ftco-bg-dark">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section ftco-animate">
+        <h2 class="mb-4" style="color: red;">BANNER COVID / DIGESTO DE GENERO</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Proyectos -->
+<section class="ftco-section bg-light">
   <div class="container">
     <div class="row justify-content-center mb-5">
       <div class="col-md-10 text-center heading-section ftco-animate">
@@ -85,6 +97,32 @@ layout: default
   </div>
 </section>
 
+<!-- Nuestra Ciudad-->
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section ftco-animate">
+        <span class="subheading">Nuestra Ciudad</span>
+        <h2 class="mb-4">Lorem ipsum dolor sit amet consectetur adipiscing</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="carousel-case owl-carousel ftco-owl">
+          {% include ciudad.html %}
+          {% include ciudad.html %}
+          {% include ciudad.html %}
+          {% include ciudad.html %}
+        </div>
+      </div>
+      <div class="col-md-12 text-center mt-4">
+        <a href="/nuestra-ciudad" class="btn btn-primary px-5">Mirá La Galería Completa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- Los Protagonistas -->
 <section class="ftco-section bg-light">
   <div class="container">
@@ -107,7 +145,7 @@ layout: default
 
 <!-- Contacto -->
 <section class="ftco-consultation ftco-section ftco-no-pt ftco-no-pb img"
-  style="background-image: url(images/bg_2.jpg);">
+  style="background-image: url(/assets/images/cintia-susñar-contacto.jpg);">
   <div class="overlay"></div>
   <div class="container">
     <div class="row d-md-flex justify-content-end">

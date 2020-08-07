@@ -148,41 +148,55 @@ layout: default
       <div class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white">
         <span class="subheading">Ante cualquier consulta</span>
         <h2 class="mb-4">Contáctame</h2>
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-          <p>
-            <label>Your Role: <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-
         <!--
-        <form name="contact" method="POST" data-netlify="true" class="consultation">
+        <form action="#" class="consultation">
           <div class="form-group">
-            <input type="text" name="name" class="form-control" placeholder="Tu nombre">
+            <input type="text" class="form-control" placeholder="Tu nombre">
           </div>
           <div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="Tu correo electrónico">
+            <input type="text" class="form-control" placeholder="Tu correo electrónico">
           </div>
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Asunto">
           </div>
           <div class="form-group">
-            <textarea name="message" id="" cols="30" rows="7" class="form-control"
+            <textarea name="" id="" cols="30" rows="7" class="form-control"
               placeholder="¿Cómo puedo ayudarte?"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Enviar Mensaje" class="btn btn-dark py-3 px-4">
+          </div>
+        </form>
+        -->
+        <form action="#" class="consultation" name="contact" method="POST" data-netlify="true">
+          <div class="form-group">
+            <input name="name" type="text" class="form-control" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <input name="email" type="text" class="form-control" placeholder="Tu correo electrónico">
+          </div>
+          <div class="form-group">
+            <input name="message" type="text" class="form-control" placeholder="Asunto">
+          </div>
+          <div class="form-group">
+            <textarea name="message" cols="30" rows="7" class="form-control"
+              placeholder="¿Cómo puedo ayudarte?"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Enviar Mensaje" class="btn btn-dark py-3 px-4">
+          </div>
+        </form>
+        <!-- FORM -->
+        <!--
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="form-group">
+            <label><input type="text" name="name" class="form-control" placeholder="Tu nombre" /></label>
+          </div>
+          <div class="form-group">
+            <label><input type="email" name="email" class="form-control" placeholder="Tu nombre" /></label>
+          </div>
+          <div class="form-group">
+            <label><textarea name="message" class="form-control" placeholder="Tu nombre"></textarea></label>
           </div>
           <div class="form-group">
             <input type="submit" value="Enviar Mensaje" class="btn btn-dark py-3 px-4">

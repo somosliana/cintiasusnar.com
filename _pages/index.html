@@ -12,8 +12,7 @@ layout: default
 {% comment %}{% include miniaturas/excludes/index/7-blog.html %}{% endcomment %}
 
 <!-- Hero -->
-<div class="hero-wrap js-fullheight"
-  style="background-image: url('/assets/images/cintia-susñar-hero.jpg');"
+<div class="hero-wrap js-fullheight" style="background-image: url('/assets/images/cintia-susñar-hero.jpg');"
   data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
@@ -149,18 +148,20 @@ layout: default
       <div class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white">
         <span class="subheading">Ante cualquier consulta</span>
         <h2 class="mb-4">Contáctame</h2>
-        <form action="#" class="consultation">
+        <form name="contact" method="POST" data-netlify="true" class="consultation">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Tu nombre">
+            <input type="text" name="name" class="form-control" placeholder="Tu nombre">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Tu correo electrónico">
+            <input type="email" name="email" class="form-control" placeholder="Tu correo electrónico">
           </div>
+          <!--
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Asunto">
+            </div>
+          -->
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Asunto">
-          </div>
-          <div class="form-group">
-            <textarea name="" id="" cols="30" rows="7" class="form-control"
+            <textarea name="message" id="" cols="30" rows="7" class="form-control"
               placeholder="¿Cómo puedo ayudarte?"></textarea>
           </div>
           <div class="form-group">

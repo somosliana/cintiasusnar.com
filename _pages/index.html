@@ -20,14 +20,14 @@ layout: default
       data-scrollax-parent="true">
       <div class="col-md-6 ftco-animate hero-text">
         <h1>Cintia Susñar</h1>
-        <h2 class="subheading">Concejal de Rio Grande, Tierra del Fuego</h2>
+        <h2 class="subheading" style="color: white">Concejal de Rio Grande, Tierra del Fuego</h2>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Sobre mi -->
-<section id="sobre-mi" class="ftco-section <!--ftco-no-pb-->">
+<section id="sobre-mi" class="ftco-section ftco-no-pb">
   <div class="container">
     <div class="row d-flex">
       <div class="col-md-6 pl-md-5">
@@ -58,12 +58,11 @@ layout: default
 </section>
 
 <!-- Banner COVID/Genero -->
-<section class="ftco-section ftco-bg-dark">
+<section class="ftco-section ftco-no-pb">
   <div class="container">
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-10 text-center heading-section ftco-animate">
-        <h2 class="mb-4" style="color: red;">BANNER COVID / DIGESTO DE GENERO</h2>
-      </div>
+    <div class="row d-flex">
+      {% include miniaturas/banner.html %}
+      {% include miniaturas/banner.html %}
     </div>
   </div>
 </section>
@@ -117,7 +116,6 @@ layout: default
     </div>
   </div>
 </section>
-
 
 <!-- Los Protagonistas -->
 <section class="ftco-section bg-light">

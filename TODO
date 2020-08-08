@@ -1,11 +1,8 @@
-- Change font: https://fonts.google.com/specimen/Quicksand#standard-styles
 - Change color text hero
 - <script>document.write(new Date().getFullYear());</script>
-- ats="" a imagenes
 - 404.html
-- Banner Footer: Liana
-- Banner
 - CMS
+    - Font
 -------------------
 
 # Enhacement
@@ -13,15 +10,14 @@
 - Navbar negro
 - Subir archivos pdf
 - /nuestra-ciudad: Click en imagen -> Modal
+- ats="" a imagenes
+- Banner Footer: Liana
+- CMS: Font
 
 # Bug
 - Carousel no me deja scrollear para abajo en el celu
 - _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
 
-
-
-
--
 # CMS
 - Noticias (gacetillas - publicaciones en tus redes sociales) | Esto es netamente subir un "word" o textos tipo notas que yo las tengo escrita
 - Proyectos presentados (aquellos que se encuentran en comisión, los que están aprobados y los que están en carpeta) | Esto debería pasarte pdfs junto a sus fotos para ir subiendo.

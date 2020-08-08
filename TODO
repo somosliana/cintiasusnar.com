@@ -1,27 +1,28 @@
-- Change color text hero
-- <script>document.write(new Date().getFullYear());</script>
-- 404.html
 - CMS
-    - Font
+    - Font, Nombre, Cargo, Descripcion
+    - Proyectos: titulo + fecha + foto + pdf
+    - Noticias: titulo + parse:subtitulo + fecha + foto + post
+    - Nuestra ciudad
+- /nuestra-ciudad: Click en imagen -> Modal
+- Navbar selected page highlight
 -------------------
 
 # Enhacement
-- Implement Paginators
 - Navbar negro
-- Subir archivos pdf
-- /nuestra-ciudad: Click en imagen -> Modal
-- ats="" a imagenes
-- Banner Footer: Liana
-- CMS: Font
+- Paginators
+- 404.html
 
-# Bug
+# Refactor
+- ats="" a imagenes
+- <script>document.write(new Date().getFullYear());</script>
+- parse:subtitulo from post
+- svg as images?
+- Cleanup
+
+# Bugs
 - Carousel no me deja scrollear para abajo en el celu
 - _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
 
 # CMS
 - Noticias (gacetillas - publicaciones en tus redes sociales) | Esto es netamente subir un "word" o textos tipo notas que yo las tengo escrita
 - Proyectos presentados (aquellos que se encuentran en comisión, los que están aprobados y los que están en carpeta) | Esto debería pasarte pdfs junto a sus fotos para ir subiendo.
-
-# BOTONES
-- Digesto de Género (ver la posibilidad de anexar este link https://www.concejoriogrande.gov.ar/?page_id=10441). Quedo a la espera de que me digas cuál es la mejor opción
-- Números de contacto de emergencia con información relacionada al COVID19 (LÍNEA 107 - Números locales de emergencia) - Podríamos hacer una especie de banner o flyer.

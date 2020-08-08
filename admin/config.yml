@@ -1,66 +1,10 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "assets/uploads"
+media_folder: 'assets/uploads'
 collections:
-  - name: "config"
-    label: "Config"
-    editor:
-      preview: false
-    files:
-      - label: "Descripcion"
-        name: "indice"
-        file: "_data/index.yml"
-        fields:
-          - { label: Nombre, name: nombre, widget: string }
-          - { label: Profesion, name: profesion, widget: string }
-          - { label: "Descripcion", name: "descripcion", widget: "markdown" }
-  - name: "proyectos"
-    label: "Proyectos"
-    folder: "_proyectos/"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Descripcion", name: "description", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - name: "noticias"
-    label: "Noticias"
-    folder: "_noticias/"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Descripcion", name: "description", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-      - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - name: "entrevistas"
-    label: "Entrevistas"
-    folder: "_noticias/"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
-  - name: "fotos"
-    label: "Fotos"
-    folder: "_fotos/"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Titulo", name: "name", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { name: Title }

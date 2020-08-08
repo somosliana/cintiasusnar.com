@@ -1,27 +1,27 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "assets/uploads"
+media_folder: "assets/images"
 collections:
   - name: "configuracion"
-    label: "Configuracion"
+    label: "Configuración"
     editor:
       preview: false
     files:
       - label: "Configuracion de Pagina Principal"
         name: "indice"
-        file: "_data/index.yml"
+        file: "_data/configuracion.yaml"
         fields:
-          - { label: Fuente, name: "fuente", widget: "string" }
-          - { label: Nombre, name: nombre, widget: string }
-          - { label: Cargo, name: cargo, widget: string }
+          # - { label: Fuente, name: "fuente", widget: "string", default: "/assets/images/cintia-susñar-hero.jpg"  }
+          - { label: Nombre, name: nombre, widget: string, default: "Cintia Susñar"}
+          - { label: Cargo, name: cargo, widget: string, default: "Concejal de Rio Grande, Tierra del Fuego"}
           - { label: Descripción, name: "descripcion", widget: "markdown" }
-          - { label: "Imagen de Hero", name: "hero", widget: "image" }
-          - { label: "Imagen de Sobre mi", name: "sobre-mi", widget: "image" }
-          - { label: "Imagen de Contacto", name: "contacto", widget: "image" }
+          - { label: "Imagen de Hero", name: "hero", widget: "image" , default: "/assets/images/cintia-susñar-hero.jpg"}
+          - { label: "Imagen de Sobre mi", name: "sobre-mi", widget: "image" , default: "/assets/images/cintia-susñar-sobre-mi.jpg"}
+          - { label: "Imagen de Contacto", name: "contacto", widget: "image", default: "/assets/images/cintia-susñar-contacto.jpg"}
   - name: "proyecto"
     label: "Proyecto"
-    folder: "_proyectos/"
+    folder: "_posts/proyectos"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -34,7 +34,7 @@ collections:
       - { label: "Fecha", name: "date", widget: "datetime" }
   - name: "noticia"
     label: "Noticia"
-    folder: "_noticias/"
+    folder: "_posts/noticias"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
@@ -48,7 +48,7 @@ collections:
       - { label: "Cuerpo", name: "body", widget: "markdown" }
   - name: "nuestra-ciudad"
     label: "Nuestra Ciudad"
-    folder: "_noticias/"
+    folder: "_posts/nuestra-ciudad"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:

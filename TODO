@@ -1,8 +1,4 @@
-- CMS
-    - Font, Nombre, Cargo, Descripcion, Img:Hero, Img:Sobre-mi, Img:Contacto
-    - Proyectos: titulo + fecha + foto + pdf
-    - Noticias: titulo + parse:subtitulo + fecha + foto + post
-    - Nuestra ciudad: titulo + descripcion + image
+- CMS: Que funque
 - /nuestra-ciudad: Click en imagen -> Modal
 -------------------
 

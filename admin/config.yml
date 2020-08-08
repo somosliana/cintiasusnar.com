@@ -1,10 +1,60 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: 'assets/uploads'
+media_folder: "assets/uploads"
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: "configuracion"
+    label: "Configuracion"
+    editor:
+      preview: false
+    files:
+      - label: "Configuracion de Pagina Principal"
+        name: "indice"
+        file: "_data/index.yml"
+        fields:
+          - { label: Fuente, name: "fuente", widget: "string" }
+          - { label: Nombre, name: nombre, widget: string }
+          - { label: Cargo, name: cargo, widget: string }
+          - { label: Descripción, name: "descripcion", widget: "markdown" }
+          - { label: "Imagen de Hero", name: "hero", widget: "image" }
+          - { label: "Imagen de Sobre mi", name: "sobre-mi", widget: "image" }
+          - { label: "Imagen de Contacto", name: "contacto", widget: "image" }
+  - name: "proyecto"
+    label: "Proyecto"
+    folder: "_proyectos/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     fields:
-      - { name: Title }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Archivo", name: "file", widget: "file" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+  - name: "noticia"
+    label: "Noticia"
+    folder: "_noticias/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Descripcion", name: "description", widget: "string" }
+      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Cuerpo", name: "body", widget: "markdown" }
+  - name: "nuestra-ciudad"
+    label: "Nuestra Ciudad"
+    folder: "_noticias/"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Descripcion", name: "description", widget: "string" }
+      - { label: "Imagen", name: "thumbnail", widget: "image" }

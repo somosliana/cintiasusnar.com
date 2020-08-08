@@ -1,16 +1,21 @@
 - CMS
-    - Font, Nombre, Cargo, Descripcion
+    - Font, Nombre, Cargo, Descripcion, Img:Hero, Img:Sobre-mi, Img:Contacto
     - Proyectos: titulo + fecha + foto + pdf
     - Noticias: titulo + parse:subtitulo + fecha + foto + post
-    - Nuestra ciudad
+    - Nuestra ciudad: titulo + descripcion + image
 - /nuestra-ciudad: Click en imagen -> Modal
-- Navbar selected page highlight
 -------------------
 
 # Enhacement
+- CMS Idioma Español
+- Navbar selected page highlight
 - Navbar negro
 - Paginators
 - 404.html
+
+# Bugs
+- Carousel no me deja scrollear para abajo en el celu
+- _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
 
 # Refactor
 - ats="" a imagenes
@@ -19,9 +24,6 @@
 - svg as images?
 - Cleanup
 
-# Bugs
-- Carousel no me deja scrollear para abajo en el celu
-- _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
 
 # CMS
 - Noticias (gacetillas - publicaciones en tus redes sociales) | Esto es netamente subir un "word" o textos tipo notas que yo las tengo escrita

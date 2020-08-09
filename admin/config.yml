@@ -28,6 +28,7 @@ collections:
     editor:
       preview: false
     fields:
+      - {label: "Category", name: "category", widget: "hidden", default: "proyectos"}
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Imagen", name: "thumbnail", widget: "image" }

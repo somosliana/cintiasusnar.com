@@ -1,18 +1,22 @@
-- CMS: Que funque
-- /nuestra-ciudad: Click en imagen -> Modal
+- CMS: Liquid!!
+- CMS: Slug
 -------------------
+- /nuestra-ciudad: Click en imagen -> Modal
+- 404.html
+- Paginators
+- Navbar negro
+- Navbar selected page highlight
 
 # Enhacement
-- CMS Idioma Español
-- Navbar selected page highlight
-- Navbar negro
+- CMS: Personalize
+- CMS: Filtered folder collections
+- Netlify: Image preprocessing (Resize, Etc)
 - Personalize loader.js
-- Paginators
-- 404.html
 
 # Bugs
 - Carousel no me deja scrollear para abajo en el celu
 - _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
+- Fix el hashtag de mierda este: url/admin/#/collections
 
 # Refactor
 - ats="" a imagenes
@@ -20,8 +24,3 @@
 - parse:subtitulo from post
 - svg as images?
 - Cleanup
-
-
-# CMS
-- Noticias (gacetillas - publicaciones en tus redes sociales) | Esto es netamente subir un "word" o textos tipo notas que yo las tengo escrita
-- Proyectos presentados (aquellos que se encuentran en comisión, los que están aprobados y los que están en carpeta) | Esto debería pasarte pdfs junto a sus fotos para ir subiendo.

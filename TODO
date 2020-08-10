@@ -1,32 +1,19 @@
-- Renombrar las imagenes
-- Carpeta Uploads
-
-- Post template
-
-- Better CSS for Markdown Post h1 h2 h3
-- Miniaturas same width for all cases
-
-- Navbar selected page highlight
-- /nuestra-ciudad: Click en imagen -> Modal
-- parse:subtitulo from post
-
-
 # Refactor
-- Navbar negro
-- svg as images
-- ats="" a imagenes
+- Navbar de color blanco en version mobile
+- SVG de icons, para sacar esa dependencia de css
+- Alt a las imagenes para mejor SEO
 - <script>document.write(new Date().getFullYear());</script>
-- Cleanup
+- Mover lo de configuracion a Carpeta Uploads
+    - Renombrar las imagenes
+- Cleanup de css
 -------------------
 
 # Enhacement
 - CMS: Personalize
 - Netlify: Image preprocessing (Resize, Etc)
-- _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
 - Paginators
-- Light bg a las pages
 - Personalize loader.js
 
 # Bugs
-- Carousel no me deja scrollear para abajo en el celu
+- Carousel es incomodo en mobile
 - Fix el hashtag de mierda este: url/admin/#/collections

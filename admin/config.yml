@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "assets/images"
+media_folder: "assets/uploads"
 locale: 'es'
 collections:
   - name: "configuracion"
@@ -18,22 +18,9 @@ collections:
           - { label: Cargo, name: cargo, widget: string, default: "Concejal de Rio Grande, Tierra del Fuego"}
           - { label: Descripción, name: "descripcion", widget: "markdown" }
           - { label: "Imagen de Hero", name: "hero", widget: "image" , default: "/assets/images/cintia-susñar-hero.jpg"}
+          - { label: "Imagen de Hero de las Paginas", name: "hero-2", widget: "image" , default: "/assets/images/cintia-susñar-hero-2.jpg"}
           - { label: "Imagen de Sobre mi", name: "sobre-mi", widget: "image" , default: "/assets/images/cintia-susñar-sobre-mi.jpg"}
           - { label: "Imagen de Contacto", name: "contacto", widget: "image", default: "/assets/images/cintia-susñar-contacto.jpg"}
-  - name: "proyecto"
-    label: "Proyecto"
-    folder: "_posts/proyectos"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - {label: "Category", name: "category", widget: "hidden", default: "proyectos"}
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
-      - { label: "Archivo", name: "file", widget: "file" }
-      - { label: "Fecha", name: "date", widget: "datetime" }
   - name: "noticia"
     label: "Noticia"
     folder: "_posts/noticias"
@@ -43,6 +30,37 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Category", name: "categoy", widget: "hidden", default: "noticias" }
+      - { label: "Category Label", name: "categoy-label", widget: "hidden", default: "Noticias" }
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Descripcion", name: "description", widget: "string" }
+      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+      - { label: "Cuerpo", name: "body", widget: "markdown" }
+  - name: "proyecto"
+    label: "Proyecto"
+    folder: "_posts/proyectos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Category", name: "category", widget: "hidden", default: "proyectos"}
+      - { label: "Titulo", name: "title", widget: "string" }
+      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Archivo", name: "file", widget: "file" }
+      - { label: "Fecha", name: "date", widget: "datetime" }
+  - name: "los-protagonistas"
+    label: "Los Protagonistas"
+    folder: "_posts/noticias"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Category", name: "categoy", widget: "hidden", default: "los-protagonistas" }
+      - { label: "Category Label", name: "categoy-label", widget: "hidden", default: "Los Protagonistas" }
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
       - { label: "Imagen", name: "thumbnail", widget: "image" }
@@ -56,7 +74,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Category", name: "category", widget: "hidden", default: "nuestra-ciudad"}
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
       - { label: "Imagen", name: "thumbnail", widget: "image" }

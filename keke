@@ -2,7 +2,8 @@
 - Los posts todavia no muestran la fecha en la que fueron publicados
 - Miniaturas no deben cambiar de tamaño si el titulo o la descricion es muy corta
 - Que la barra de navegacion muestre en color la pagina actual
-- Que click en las imagenes de "nuestra ciudad" hagan que se vean en pantalla completa
-- Mas opciones en el cms: como cambiar las fotos del banner y otras
+- Que click en las imagenes de "Nuestra Ciudad" hagan que se vean en pantalla completa
+- Mas opciones en el CMS: como cambiar las fotos del banner, titulos y demas
 - Cuando te logees tenes que refrescar la pagina para que entre al cms (deberia ser automatico)
+
 - "Los protagonistas" y "Noticias" piden "descripcion", si preferis hago que muestre la primer parte del post

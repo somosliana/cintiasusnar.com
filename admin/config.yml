@@ -52,7 +52,7 @@ collections:
       - { label: "Fecha", name: "date", widget: "datetime" }
   - name: "los-protagonistas"
     label: "Los Protagonistas"
-    folder: "_posts/noticias"
+    folder: "_posts/los-protagonistas"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:

@@ -35,7 +35,7 @@ collections:
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
       - { label: "Imagen", name: "image", widget: "image" }
-      - { label: "Fecha", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD"}
+      - { label: "Fecha", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: false, pickerUtc: true }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
   - name: "proyecto"
     label: "Proyecto"
@@ -49,7 +49,7 @@ collections:
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Archivo", name: "file", widget: "file" }
-      - { label: "Fecha", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD"}
+      - { label: "Fecha", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: false, pickerUtc: true }
   - name: "los-protagonistas"
     label: "Los Protagonistas"
     folder: "_posts/los-protagonistas"

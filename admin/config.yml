@@ -30,8 +30,8 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Category", name: "categoy", widget: "hidden", default: "noticias" }
-      - { label: "Category Label", name: "categoy-label", widget: "hidden", default: "Noticias" }
+      - { label: "Category", name: "category", widget: "hidden", default: "noticias" }
+      - { label: "Category Label", name: "category-label", widget: "hidden", default: "Noticias" }
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
       - { label: "Imagen", name: "thumbnail", widget: "image" }
@@ -59,8 +59,8 @@ collections:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Category", name: "categoy", widget: "hidden", default: "los-protagonistas" }
-      - { label: "Category Label", name: "categoy-label", widget: "hidden", default: "Los Protagonistas" }
+      - { label: "Category", name: "category", widget: "hidden", default: "los-protagonistas" }
+      - { label: "Category Label", name: "category-label", widget: "hidden", default: "Los Protagonistas" }
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
       - { label: "Imagen", name: "thumbnail", widget: "image" }

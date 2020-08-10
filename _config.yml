@@ -1,3 +1,4 @@
-permalink: /:categories/:year/:month/:day/:title
+# permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:title
 plugins:
   - jekyll-pages-directory

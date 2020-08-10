@@ -34,7 +34,7 @@ collections:
       - { label: "Category Label", name: "category-label", widget: "hidden", default: "Noticias" }
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
   - name: "proyecto"
@@ -47,7 +47,7 @@ collections:
     fields:
       - { label: "Category", name: "category", widget: "hidden", default: "proyectos"}
       - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Archivo", name: "file", widget: "file" }
       - { label: "Fecha", name: "date", widget: "datetime" }
   - name: "los-protagonistas"
@@ -63,7 +63,7 @@ collections:
       - { label: "Category Label", name: "category-label", widget: "hidden", default: "Los Protagonistas" }
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Fecha", name: "date", widget: "datetime" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
   - name: "nuestra-ciudad"
@@ -77,4 +77,4 @@ collections:
       - { label: "Category", name: "category", widget: "hidden", default: "nuestra-ciudad"}
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
-      - { label: "Imagen", name: "thumbnail", widget: "image" }
+      - { label: "Imagen", name: "image", widget: "image" }

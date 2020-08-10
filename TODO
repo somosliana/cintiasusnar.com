@@ -1,21 +1,23 @@
+- hero a cada uno
+
+
 - CMS: Liquid!!
-- CMS: Slug
+- Light bg a las pages
 -------------------
 - /nuestra-ciudad: Click en imagen -> Modal
 - 404.html
 - Paginators
 - Navbar negro
 - Navbar selected page highlight
+- _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
 
 # Enhacement
 - CMS: Personalize
-- CMS: Filtered folder collections
 - Netlify: Image preprocessing (Resize, Etc)
 - Personalize loader.js
 
 # Bugs
 - Carousel no me deja scrollear para abajo en el celu
-- _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
 - Fix el hashtag de mierda este: url/admin/#/collections
 
 # Refactor

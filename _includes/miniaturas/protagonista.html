@@ -1,13 +1,12 @@
 <div class="col-md-4 d-flex ftco-animate">
   <div class="blog-entry justify-content-end">
-
-    <a href="/ejemplo" class="block-20" style="background-image: url('/assets/images/cintia-susñar-protagonista.jpg');">
+    <a href="{{ include.url }}" class="block-20" style="background-image: url('{{ include.image }}');">
     </a>
     <div class="text p-4 float-right d-block">
       <div class="text">
-        <h3 class="heading"><a href="/ejemplo">Lorem ipsum dolor sit amet</a></h3>
+        <h3 class="heading"><a href="{{ include.url }}">{{ include.title }}</a></h3>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      <p>{{ include.description }}</p>
     </div>
   </div>
 </div>

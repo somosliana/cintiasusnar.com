@@ -1,28 +1,29 @@
-- hero a cada uno
+- Post template
 
+- Better CSS for Markdown Post h1 h2 h3
+- Miniaturas same width for all cases
 
-- CMS: Liquid!!
-- Light bg a las pages
--------------------
-- /nuestra-ciudad: Click en imagen -> Modal
-- 404.html
-- Paginators
-- Navbar negro
 - Navbar selected page highlight
-- _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
+- /nuestra-ciudad: Click en imagen -> Modal
+- parse:subtitulo from post
+
+
+# Refactor
+- Navbar negro
+- svg as images
+- ats="" a imagenes
+- <script>document.write(new Date().getFullYear());</script>
+- Cleanup
+-------------------
 
 # Enhacement
 - CMS: Personalize
 - Netlify: Image preprocessing (Resize, Etc)
+- _includes/miniaturas/proyectos.html: Sacarle la flechita a la fecha
+- Paginators
+- Light bg a las pages
 - Personalize loader.js
 
 # Bugs
 - Carousel no me deja scrollear para abajo en el celu
 - Fix el hashtag de mierda este: url/admin/#/collections
-
-# Refactor
-- ats="" a imagenes
-- <script>document.write(new Date().getFullYear());</script>
-- parse:subtitulo from post
-- svg as images?
-- Cleanup

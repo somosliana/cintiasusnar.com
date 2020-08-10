@@ -54,11 +54,12 @@ layout: default
     <div class="row d-flex">
       <div class="col-md-6 d-flex ftco-animate">
         <img src="/assets/images/cintia-susñar-banner-covid.jpg" class="img-fluid" alt="Responsive image">
-    </div><div class="col-md-6 d-flex ftco-animate">
-      <a href="https://www.concejoriogrande.gov.ar/?page_id=10441">
-        <img src="/assets/images/cintia-susñar-digesto-de-genero.jpg" class="img-fluid" alt="Responsive image">
-      </a>
-  </div>
+      </div>
+      <div class="col-md-6 d-flex ftco-animate">
+        <a href="https://www.concejoriogrande.gov.ar/?page_id=10441">
+          <img src="/assets/images/cintia-susñar-digesto-de-genero.jpg" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -75,10 +76,15 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <div class="carousel-case owl-carousel ftco-owl">
-          {% include miniaturas/proyecto.html %}
-          {% include miniaturas/proyecto.html %}
-          {% include miniaturas/proyecto.html %}
-          {% include miniaturas/proyecto.html %}
+          {% for post in site.categories.proyectos limit:6 %}
+            <div class="item">
+              {% include miniaturas/proyecto.html
+                title=post.title
+                image=post.image
+                url=post.url
+              %}
+            </div>
+          {% endfor %}
         </div>
       </div>
       <div class="col-md-12 text-center mt-4">
@@ -100,10 +106,14 @@ layout: default
     <div class="row">
       <div class="col-md-12">
         <div class="carousel-case owl-carousel ftco-owl">
-          {% include miniaturas/ciudad.html %}
-          {% include miniaturas/ciudad.html %}
-          {% include miniaturas/ciudad.html %}
-          {% include miniaturas/ciudad.html %}
+          {% for post in site.categories.nuestra-ciudad limit:6 %}
+          {% include miniaturas/ciudad.html
+              title=post.title
+              description=post.description
+              image=post.image
+              url=post.url
+            %}
+          {% endfor %}
         </div>
       </div>
       <div class="col-md-12 text-center mt-4">
@@ -123,9 +133,14 @@ layout: default
       </div>
     </div>
     <div class="row d-flex">
-      {% include miniaturas/protagonista.html %}
-      {% include miniaturas/protagonista.html %}
-      {% include miniaturas/protagonista.html %}
+      {% for post in site.categories.los-protagonistas limit:3 %}
+      {% include miniaturas/protagonista.html
+          title=post.title
+          description=post.description
+          image=post.image
+          url=post.url
+          %}
+      {% endfor %}
     </div>
     <div id="contacto" class="col-md-12 text-center mt-4">
       <a href="/los-protagonistas" class="btn btn-primary px-5">Leer más</a>
@@ -197,9 +212,14 @@ layout: default
       </div>
     </div>
     <div class="row d-flex">
-      {% include miniaturas/noticia.html %}
-      {% include miniaturas/noticia.html %}
-      {% include miniaturas/noticia.html %}
+      {% for post in site.categories.noticias limit:3 %}
+      {% include miniaturas/noticia.html
+          title=post.title
+          image=post.image
+          url=post.url
+          description=post.description
+        %}
+      {% endfor %}
     </div>
     <div class="col-md-12 text-center mt-4">
       <a href="/noticias" class="btn btn-primary px-5">Ver Todas Las Noticias</a>

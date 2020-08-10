@@ -2,18 +2,20 @@
 layout: default
 ---
 
-{% include hero-page.html title="Proyectos" image="/assets/images/cintia-susñar-hero-2.jpg"%}
+{% include hero-page.html title="Los Protagonistas" image="/assets/images/cintia-susñar-hero-2.jpg"%}
 
 <section class="ftco-section bg-light">
   <div class="container">
     <div class="row d-flex">
-      {% include miniaturas/_proyecto.html %}
-      {% include miniaturas/_proyecto.html %}
-      {% include miniaturas/_proyecto.html %}
-
-      {% include miniaturas/_proyecto.html %}
-      {% include miniaturas/_proyecto.html %}
-      {% include miniaturas/_proyecto.html %}
+      {% for post in site.categories.proyectos %}
+        <div class="col-md-4">
+          {% include miniaturas/proyecto.html
+            title=post.title
+            image=post.image
+            url=post.url
+          %}
+        </div>
+      {% endfor %}
     </div>
     {% include paginator.html %}
   </div>

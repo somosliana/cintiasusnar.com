@@ -7,14 +7,13 @@ layout: default
 <section class="ftco-section bg-light">
   <div class="container">
     <div class="row d-flex">
-      {% for post in site.posts %}
-        {% if post.categories contains "noticias" %}
-          {% include miniaturas/noticia.html
-            title="{{ post.title }}"
-            image="{{ post.image }}"
-            url="{{ post.url }}"
-            description="{{ post.description }}"%}
-        {% endif %}
+      {% for post in site.categories.noticias %}
+        {% include miniaturas/noticia.html
+          title=post.title
+          image=post.image
+          url=post.url
+          description=post.description
+        %}
       {% endfor %}
     </div>
     {% include paginator.html %}

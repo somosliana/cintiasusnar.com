@@ -8,10 +8,10 @@ layout: default
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
       <div class="col-md-9 ftco-animate pb-5 text-center">
-        <h1 class="mb-3 bread">{{ page.category }}</h1>
+        <h1 class="mb-3 bread">{{ page.category-label }}</h1>
         <p class="breadcrumbs">
           <span class="mr-2"><a href="/">Inicio <i class="ion-ios-arrow-forward"></i></a></span>
-          <span class="mr-2"><a href="/{{ page.category }}">{{ page.category }} <i class="ion-ios-arrow-forward"></i></a></span>
+          <span class="mr-2"><a href="/{{ page.category }}">{{ page.category-label }} <i class="ion-ios-arrow-forward"></i></a></span>
           </span> <span>{{ page.title }}</span>
         </p>
       </div>
@@ -23,6 +23,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 ftco-animate post">
+        <h2 class="mb-3">{{ page.title }}</h2>
         <p>
           <img src="{{ page.image }}" alt="" class="img-fluid">
         </p>
@@ -30,7 +31,7 @@ layout: default
       </div> <!-- .col-md-8 -->
       <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
         <div class="sidebar-box ftco-animate">
-          <h3>{{ page.category }} Recientes</h3>
+          <h3>{{ page.category-label }} Recientes</h3>
           {% assign sorted-posts = site.posts | where: "categories", page.category %}
           {% for post in sorted-posts limit:3 %}
           {% include miniaturas/post.html

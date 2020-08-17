@@ -50,30 +50,18 @@ collections:
       - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Archivo", name: "file", widget: "file" }
       - { label: "Fecha", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", format: "YYYY-MM-DD" }
-  - name: "los-protagonistas"
-    label: "Los Protagonistas"
-    folder: "_posts/los-protagonistas"
+  - name: "nuestra-historia"
+    label: "Nuestra Historia"
+    folder: "_posts/nuestra-historia"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Category", name: "category", widget: "hidden", default: "los-protagonistas" }
-      - { label: "Category Label", name: "category-label", widget: "hidden", default: "Los Protagonistas" }
+      - { label: "Category", name: "category", widget: "hidden", default: "nuestra-historia" }
+      - { label: "Category Label", name: "category-label", widget: "hidden", default: "Nuestra Historia" }
       - { label: "Titulo", name: "title", widget: "string" }
       - { label: "Descripcion", name: "description", widget: "string" }
       - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }
-  - name: "nuestra-ciudad"
-    label: "Nuestra Ciudad"
-    folder: "_posts/nuestra-ciudad"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Category", name: "category", widget: "hidden", default: "nuestra-ciudad"}
-      - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Descripcion", name: "description", widget: "string" }
-      - { label: "Imagen", name: "image", widget: "image" }

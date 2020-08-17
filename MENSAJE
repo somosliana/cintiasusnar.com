@@ -1,0 +1,15 @@
+# Cambios
+- El formulario de contacto se convirtio en "Tu propuesta". Porque doble formulario
+de contacto es medio mucho
+- "Nuestra Ciudad" y "Los Protagonistas" ahora son "Nuestra Historia"
+- Se agrego el scrolling en la landing. Para entrar a las paginas de "Noticias",
+"Proyectos" o "Nuestra Historia" hay que hacer click en el boton de "Leer Mas"
+Porque ahora el navbar lo que hace es ir a esa seccion en la pagina principal.
+
+# Necesito con el siguiente formato
+Noticias: Titulo, Subtitulo, Imagen, Fecha, Cuerpo
+Proyecto: Titulo, Imagen, Archivo (ej: pdf), Fecha
+Nuestra Historia: Igual que una noticia pero sin fecha
+
+Igual esta el CMS. Pero con eso puedo resolver los detalles que puedan surgir al
+subir material de verdad.

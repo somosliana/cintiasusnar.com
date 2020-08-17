@@ -65,12 +65,11 @@ layout: default
 </section>
 
 <!-- Proyectos -->
-<section class="ftco-section bg-light">
+<section id="proyectos" class="ftco-section bg-light">
   <div class="container">
     <div class="row justify-content-center mb-5">
       <div class="col-md-10 text-center heading-section ftco-animate">
-        <span class="subheading">Proyectos</span>
-        <h2 class="mb-4">Ultimos Proyectos</h2>
+        <h2 class="mb-4">Proyectos</h2>
       </div>
     </div>
     <div class="row">
@@ -94,47 +93,17 @@ layout: default
   </div>
 </section>
 
-<!-- Nuestra Ciudad-->
-<section class="ftco-section">
-  <div class="container">
-    <div class="row justify-content-center mb-5">
-      <div class="col-md-10 text-center heading-section ftco-animate">
-        <span class="subheading">Nuestra Ciudad</span>
-        <h2 class="mb-4">Conoce los lugares más emblemáticos de nuestra ciudad</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="carousel-case owl-carousel ftco-owl">
-          {% for post in site.categories.nuestra-ciudad limit:6 %}
-          {% include miniaturas/ciudad.html
-              title=post.title
-              description=post.description
-              image=post.image
-              url=post.url
-            %}
-          {% endfor %}
-        </div>
-      </div>
-      <div class="col-md-12 text-center mt-4">
-        <a href="/nuestra-ciudad" class="btn btn-primary px-5">Mirá La Galería Completa</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Los Protagonistas -->
-<section class="ftco-section bg-light">
+<!-- Nuestra Historia -->
+<section id="nuestra-historia" class="ftco-section bg-light">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section text-center ftco-animate">
-        <span class="subheading">Junto a los y las protagonistas de nuestra historia</span>
-        <h2>Los Protagonistas</h2>
+        <h2>Nuestra Historia</h2>
       </div>
     </div>
     <div class="row d-flex">
-      {% for post in site.categories.los-protagonistas limit:3 %}
-      {% include miniaturas/protagonista.html
+      {% for post in site.categories.nuestra-historia limit:3 %}
+      {% include miniaturas/historia.html
           title=post.title
           description=post.description
           image=post.image
@@ -148,15 +117,15 @@ layout: default
   </div>
 </section>
 
-<!-- Contacto -->
-<section class="ftco-consultation ftco-section ftco-no-pt ftco-no-pb img"
+<!-- Tu Propuesta -->
+<section id="tu-propuesta" class="ftco-consultation ftco-section ftco-no-pt ftco-no-pb img"
   style="background-image: url(/assets/images/cintia-susñar-contacto.jpg);">
   <div class="overlay"></div>
   <div class="container">
     <div class="row d-md-flex justify-content-end">
       <div class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white">
-        <span class="subheading">Ante cualquier consulta</span>
-        <h2 class="mb-4">Contactame</h2>
+        <span class="subheading">Escucho su propuesta para ayudar a mejorar nuestra ciudad.</span>
+        <h2 class="mb-4">Tu Propuesta</h2>
         <form action="#" class="consultation" name="contact" method="POST" data-netlify="true">
           <div class="form-group">
             <input name="name" type="text" class="form-control" placeholder="Tu nombre">
@@ -203,12 +172,11 @@ layout: default
 </section>
 
 <!-- Noticias -->
-<section class="ftco-section bg-light">
+<section id="noticias" class="ftco-section bg-light">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section text-center ftco-animate">
-        <span class="subheading">Noticias</span>
-        <h2>Ultimas Noticias</h2>
+        <h2>Noticias</h2>
       </div>
     </div>
     <div class="row d-flex">

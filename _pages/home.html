@@ -1,0 +1,196 @@
+---
+layout: default
+---
+
+<!-- Hero -->
+<div class="hero-wrap js-fullheight" style="background-image: url('/assets/images/cintia-susñar-hero.jpg');"
+  data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start"
+      data-scrollax-parent="true">
+      <div class="col-md-6 ftco-animate hero-text">
+        <h1>Cintia Susñar</h1>
+        <h2 class="subheading" style="color: white">Concejal de Rio Grande, Tierra del Fuego</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sobre mi -->
+<section id="sobre-mi" class="ftco-section ftco-no-pb">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-6 pl-md-5">
+        <div class="row justify-content-start pt-3 pb-3">
+          <div class="col-md-12 heading-section ftco-animate">
+            <span class="subheading">¡HOLA VECINO!</span>
+            <h2 class="mb-4">Un poco sobre mí.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex pr-md-5">
+        <div
+          class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end"
+          style="background-image:url(/assets/images/cintia-susñar-sobre-mi.jpg);">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Banner COVID/Genero -->
+<section class="ftco-section ftco-no-pb">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-md-6 d-flex ftco-animate">
+        <img src="/assets/images/cintia-susñar-banner-covid.jpg" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-md-6 d-flex ftco-animate">
+        <a href="https://www.concejoriogrande.gov.ar/?page_id=10441">
+          <img src="/assets/images/cintia-susñar-digesto-de-genero.jpg" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Proyectos -->
+<section id="proyectos" class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section ftco-animate">
+        <h2 class="mb-4">Proyectos</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="carousel-case owl-carousel ftco-owl">
+          {% for post in site.categories.proyectos limit:6 %}
+            <div class="item">
+              {% include miniaturas/proyecto.html
+                title=post.title
+                image=post.image
+                url=post.file
+              %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-12 text-center mt-4">
+        <a href="/proyectos" class="btn btn-primary px-5">Ver Todos Los Proyectos</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Nuestra Historia -->
+<section id="nuestra-historia" class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2>Nuestra Historia</h2>
+      </div>
+    </div>
+    <div class="row d-flex">
+      {% for post in site.categories.nuestra-historia limit:3 %}
+      {% include miniaturas/historia.html
+          title=post.title
+          description=post.description
+          image=post.image
+          url=post.url
+          %}
+      {% endfor %}
+    </div>
+    <div id="contacto" class="col-md-12 text-center mt-4">
+      <a href="/los-protagonistas" class="btn btn-primary px-5">Leer más</a>
+    </div>
+  </div>
+</section>
+
+<!-- Tu Propuesta -->
+<section id="tu-propuesta" class="ftco-consultation ftco-section ftco-no-pt ftco-no-pb img"
+  style="background-image: url(/assets/images/cintia-susñar-contacto.jpg);">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row d-md-flex justify-content-end">
+      <div class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white">
+        <span class="subheading">Escucho su propuesta para ayudar a mejorar nuestra ciudad.</span>
+        <h2 class="mb-4">Tu Propuesta</h2>
+        <form action="#" class="consultation" name="contact" method="POST" data-netlify="true">
+          <div class="form-group">
+            <input name="name" type="text" class="form-control" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <input name="email" type="text" class="form-control" placeholder="Tu correo electrónico">
+          </div>
+          <div class="form-group">
+            <input name="message" type="text" class="form-control" placeholder="Asunto">
+          </div>
+          <div class="form-group">
+            <textarea name="message" cols="30" rows="7" class="form-control"
+              placeholder="¿Cómo puedo ayudarte?"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Enviar Mensaje" class="btn btn-dark py-3 px-4">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social -->
+<section class="ftco-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section ftco-animate">
+        <h2 class="mb-4">Encontrame en las Redes Sociales</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <ul class="ftco-social list-unstyled">
+          <li class="ftco-animate"><a href="https://twitter.com/csusnar"><span class="icon-twitter"></span></a></li>
+          <li class="ftco-animate"><a href="https://www.facebook.com/cssusnar"><span class="icon-facebook"></span></a>
+          </li>
+          <li class="ftco-animate"><a href="https://www.instagram.com/cssusnar"><span class="icon-instagram"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Noticias -->
+<section id="noticias" class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <h2>Noticias</h2>
+      </div>
+    </div>
+    <div class="row d-flex">
+      {% for post in site.categories.noticias limit:3 %}
+      {% include miniaturas/noticia.html
+          title=post.title
+          image=post.image
+          url=post.url
+          description=post.description
+        %}
+      {% endfor %}
+    </div>
+    <div class="col-md-12 text-center mt-4">
+      <a href="/noticias" class="btn btn-primary px-5">Ver Todas Las Noticias</a>
+    </div>
+  </div>
+</section>

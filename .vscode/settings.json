@@ -3,6 +3,9 @@
     "_site/": true,
     ".sass-cache/": true,
     ".jekyll-cache/": true,
-    ".jekyll-metadata": true
+    ".jekyll-metadata": true,
+    "Gemfile.lock": true,
+    ".ruby-version": true,
+    ".tool-versions": true
   }
 }

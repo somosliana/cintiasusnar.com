@@ -28,6 +28,11 @@ layout: default
           <img src="{{ page.image }}" alt="" class="img-fluid">
         </p>
         {{ content }}
+        {% if page.file %}
+        <div class="col-md-12 text-center mt-4">
+          <a href="{{ page.file }}" class="btn btn-primary px-5">Descargar el Proyecto</a>
+        </div>
+        {% endif %}
       </div> <!-- .col-md-8 -->
       <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
         <div class="sidebar-box ftco-animate">

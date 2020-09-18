@@ -6,15 +6,40 @@ layout: default
 
 <section class="ftco-section bg-light">
   <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section ftco-animate">
+        <h2 class="mb-4">Aprobados en Sesión</h2>
+      </div>
+    </div>
     <div class="row d-flex">
       {% for post in site.categories.proyectos %}
-        <div class="col-md-4">
-          {% include miniaturas/proyecto.html
-            title=post.title
-            image=post.image
-            url=post.file
-          %}
-        </div>
+        {% if post.state == "Aprobado" %}
+          <div class="col-md-4">
+            {% include miniaturas/proyecto.html
+              title=post.title
+              image=post.image
+              url=post.url
+            %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-10 text-center heading-section ftco-animate">
+        <h2 class="mb-4">Debatidos en Comisión</h2>
+      </div>
+    </div>
+    <div class="row d-flex">
+      {% for post in site.categories.proyectos %}
+        {% if post.state == "En Comision" %}
+          <div class="col-md-4">
+            {% include miniaturas/proyecto.html
+              title=post.title
+              image=post.image
+              url=post.url
+            %}
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>

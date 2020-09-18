@@ -1,11 +1,11 @@
 {
   "files.exclude": {
-    "_site/": true,
-    ".sass-cache/": true,
-    ".jekyll-cache/": true,
-    ".jekyll-metadata": true,
-    "Gemfile.lock": true,
-    ".ruby-version": true,
-    ".tool-versions": true
+    "_site/": false,
+    ".sass-cache/": false,
+    ".jekyll-cache/": false,
+    ".jekyll-metadata": false,
+    "Gemfile.lock": false,
+    ".ruby-version": false,
+    ".tool-versions": false
   }
 }

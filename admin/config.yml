@@ -45,9 +45,13 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Category", name: "category", widget: "hidden", default: "proyectos"}
+      - { label: "Category Label", name: "category-label", widget: "hidden", default: "Proyectos" }
       - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Imagen", name: "image", widget: "image" }
+      - { label: "Cuerpo", name: "body", widget: "markdown" }
+      - { label: "Estado", name: "state", widget: "select", options: ["Aprobado", "En Comision"]}
+      - { label: "Imagen", name: "image", widget: "image", required: false }
       - { label: "Archivo", name: "file", widget: "file" }
       - { label: "Fecha", name: "date", widget: "datetime", dateFormat: "YYYY-MM-DD", format: "YYYY-MM-DD" }
   - name: "nuestra-historia"
@@ -62,6 +66,6 @@ collections:
       - { label: "Category", name: "category", widget: "hidden", default: "nuestra-historia" }
       - { label: "Category Label", name: "category-label", widget: "hidden", default: "Nuestra Historia" }
       - { label: "Titulo", name: "title", widget: "string" }
-      - { label: "Descripcion", name: "description", widget: "string" }
+      - { label: "Descripcion", name: "description", widget: "string", required: false}
       - { label: "Imagen", name: "image", widget: "image" }
       - { label: "Cuerpo", name: "body", widget: "markdown" }

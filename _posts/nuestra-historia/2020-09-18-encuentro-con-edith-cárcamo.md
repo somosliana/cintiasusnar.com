@@ -3,7 +3,6 @@ layout: post
 category: nuestra-historia
 category-label: Nuestra Historia
 title: Encuentro con Edith Cárcamo
-description: Foo
 image: /assets/uploads/edith-carcamo.jpg
 ---
 Ercilia del Carmen Aguilar Vargas nació en Chile el 8 de abril de 1927 y falleció el 5 de septiembre de 2018. "Chila", para la gran mayoría, llegó un 21 de diciembre de 1959 a nuestra querida ciudad que supo amar y defender siempre.

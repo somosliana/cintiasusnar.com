@@ -24,16 +24,20 @@ layout: default
       <div class="col-md-6 pl-md-5">
         <div class="row justify-content-start pt-3 pb-3">
           <div class="col-md-12 heading-section ftco-animate">
-            <span class="subheading">¡HOLA VECINO!</span>
             <h2 class="mb-4">Un poco sobre mí.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.
+            <p>
+              Tengo el privilegio de haber nacido en nuestra maravillosa ciudad de Río Grande, un lugar donde además de
+              haber crecido como persona, me regaló lo más maravilloso que tengo en esta vida: mi familia.
             </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.
+            <p>
+              Ejercí la docencia durante algunos años en instituciones de la ciudad y actualmente, gracias al voto de
+              confianza que me depositaron ustedes, vecinos y vecinas, tengo la responsabilidad de representarlos en el
+              Concejo Deliberante de Río Grande. Y desde este lugar, tengo el gran desafío de continuar trabajando por
+              una ciudad más justa y con verdadera igualdad de derechos.
             </p>
+            <p>
+              Quiero y valoro mucho a mi ciudad y es por ello que los invito a que juntos trabajemos por una Río Grande
+              que nos incluya a todas y todos.
             </p>
           </div>
         </div>
@@ -76,13 +80,13 @@ layout: default
       <div class="col-md-12">
         <div class="carousel-case owl-carousel ftco-owl">
           {% for post in site.categories.proyectos limit:6 %}
-            <div class="item">
-              {% include miniaturas/proyecto.html
+          <div class="item">
+            {% include miniaturas/proyecto.html
                 title=post.title
                 image=post.image
-                url=post.file
+                url=post.url
               %}
-            </div>
+          </div>
           {% endfor %}
         </div>
       </div>
@@ -177,8 +181,8 @@ layout: default
     <div class="row d-flex justify-content-center">
       <div class="col-md-8 d-flex ftco-animate">
         <img src="/assets/images/banner-barbijo.jpg" class="img-fluid" alt="Responsive image">
+      </div>
     </div>
-  </div>
 </section>
 
 <!-- Noticias -->

@@ -1,9 +1,12 @@
-<div class="d-flex ftco-animate">
+{% if include.image %}
+  {% assign image = include.image %}
+{% else %}
+  {% assign image = "https://via.placeholder.com/1000x667?text=" | append: include.title %}
+{% endif %}
+
+<div class="ftco-animate">
   <div class="blog-entry justify-content-end">
-    <div class="text px-4 py-4">
-      <h3 class="heading mb-0"><a href="{{ include.url }}">{{ include.title }}</a></h3>
-    </div>
-    <a href="{{ include.url }}" class="block-20" style="background-image: url('{{ include.image }}');">
+    <a href="{{ include.url }}" class="block-20" style="background-image: url('{{ image }}');">
     </a>
     <div class="text p-4 float-right d-block">
       <div class="topper d-flex align-items-center">
@@ -15,6 +18,7 @@
           <span class="mos">Enero</span>
         </div>
       </div>
+      <h3 class="heading mb-0"><a href="{{ include.url }}">{{ include.title }}</a></h3>
     </div>
   </div>
 </div>

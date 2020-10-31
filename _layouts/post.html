@@ -38,7 +38,7 @@ layout: default
         <div class="sidebar-box ftco-animate">
           <h3>{{ page.category-label }} Recientes</h3>
           {% assign sorted-posts = site.posts | where: "categories", page.category %}
-          {% for post in sorted-posts limit:3 %}
+          {% for post in sorted-posts limit:4 %}
           {% include miniaturas/post.html
               title=post.title
               image=post.image

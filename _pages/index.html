@@ -187,6 +187,7 @@ layout: default
 
 <!-- Noticias -->
 <section id="noticias" class="ftco-section bg-light">
+  {% if site.categories.noticias %}
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section text-center ftco-animate">
@@ -194,17 +195,18 @@ layout: default
       </div>
     </div>
     <div class="row d-flex">
-      {% for post in site.categories.noticias limit:3 %}
-      {% include miniaturas/noticia.html
-          title=post.title
-          image=post.image
-          url=post.url
-          description=post.description
-        %}
-      {% endfor %}
-    </div>
+        {% for post in site.categories.noticias limit:3 %}
+          {% include miniaturas/noticia.html
+            title=post.title
+            image=post.image
+            url=post.url
+            description=post.description
+            %}
+          {% endfor %}
+        </div>
     <div class="col-md-12 text-center mt-4">
       <a href="/noticias" class="btn btn-primary px-5">Ver Todas Las Noticias</a>
-    </div>
   </div>
+  </div>
+  {% endif %}
 </section>
